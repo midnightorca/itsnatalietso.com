@@ -1,0 +1,48 @@
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+h2 {
+    margin-left: -10%;
+}
+
+.aboutContainer {
+    display: flex;
+    margin: 20vh 0;
+}
+
+.aboutText,
+.aboutImg {
+    width: calc(45% - 2vw);
+    margin: 0 1vw;
+}
+
+.aboutText {
+    margin-right: 2vw;
+
+    p {
+        margin-top: 0;
+    }
+
+    i {
+        margin: 0;
+        padding: 0 1rem;
+        font-size: 2rem;
+    }
+}
+
+.aboutIcons {
+    text-align: center;
+}
+
+.aboutImg {
+    margin-left: 2vw;
+}
+
+.selfImg {
+    width: 300px;
+    border: 3px solid royalblue;
+    border-radius: 10px;
+}

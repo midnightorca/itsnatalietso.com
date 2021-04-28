@@ -4,13 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
     <title>Natalie Tso</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5304873268.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <h2>bestestest</h2>
+    <!-- ===== HEADER ============================= -->
+    <header>
+        <div class="headerWrapper">
+            <a href="/index.html" class="logo"><img src="./assets/logo.png" alt="N logo" /></a>
+            <h1>Natalie Tso.</h1>
+            <h3>Front-end Developer.</h3>
+            <nav>
+                <a href="#about">about.</a>
+                <a href="#skills">skills.</a>
+                <a href="#portfolio">portfolio.</a>
+                <a href="#contact">contact.</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ================================ -->
+    <main>
+        <!-- ===== ABOUT ==================== -->
+        <section class="about wrapper" id="about">
+            <h2>about.</h2>
+            <div class="aboutContainer">
+                <div class="aboutText">
+                    <p>Hey! My name is Natalie and I am a Front-end Developer who recently graduated from Juno College of Technology's Web Development Bootcamp</a>. I am continuously exploring and learning to improve myself and my skills. </p>
+                    <p>Aside from coding, I dabble in single div art. When I am not in front of the computer, I am making pointillism art, playing video games, or travelling the world somewhere.</p>
+                    <p class="aboutIcons"><a href=""><i class="fas fa-file-download"></i></a><a href="https://github.com/midnightorca"><i class="fab fa-github"></i></a><a href="https://codepen.io/midnightorca/"><i class="fab fa-codepen"></i></a></p>
+                </div>
+                <div class="aboutImg">
+                    <img src="./assets/natalie.jpg" alt="Photo of Natalie Tso" class="selfImg" title="Natalie Tso" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ==================== -->
+        <section class="skills wrapper" id="skills">
+            <h2>skills.</h2>
+            <div class="icons">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-sass" title="SASS"></i>
+                <i class="fab fa-js-square" title="JavaScript"></i>
+                <i class="fas fa-dollar-sign" title="jQuery"></i>
+                <i class="fab fa-react" title="React"></i>
+                <i class="fas fa-cog" title="API"></i>
+                <i class="fas fa-fire-alt" title="Firebase"></i>
+                <i class="fab fa-git-alt" title="GIT"></i>
+                <i class="fas fa-mobile-alt" title="Responsive Design"></i>
+                <i class="fas fa-universal-access" title="Accessibility"></i>
+                <i class="fas fa-terminal" title="Terminal"></i>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO ================ -->
+        <section class="portfolio wrapper" id="portfolio">
+            <h2>portfolio.</h2>
+            <div class="projectsContainer">
+                <!-- ===== FIRST PROJECT ===== -->
+                <div class="project rockPaperScissors">
+                    <h4>rock, paper, scissors</h4>
+                    <div class="projectImgContainer">
+                        <img src="./assets/rockPaperScissorsProject.png" alt="Screenshot of Rock Paper Scissors Project" class="projectImg" />
+                        <div class="overlay">
+                            <div class="overlayIcons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fas fa-dollar-sign" title="jQuery"></i>
+                                <i class="fas fa-mobile-alt" title="Responsive Design"></i>
+                            </div>
+                            <div class="overlayLinks">
+                                <a href="https://midnightorca.github.io/rock-paper-scissors">live</a>
+                                <a href="https://github.com/midnightorca/rock-paper-scissors">git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== SECOND PROJECT ===== -->
+                <div class="project guessThePokemon">
+                    <h4>guess the pok&#233;mon</h4>
+                    <div class="projectImgContainer">
+                        <img src="./assets/guessThePokemonProject.png" alt="Screenshot of Guess The Pokemon Project" class="projectImg" />
+                        <div class="overlay">
+                            <div class="overlayIcons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fas fa-dollar-sign" title="jQuery"></i>
+                                <i class="fas fa-cog" title="API"></i>
+                                <i class="fas fa-mobile-alt" title="Responsive Design"></i>
+                            </div>
+                            <div class="overlayLinks">
+                                <a href="https://midnightorca.github.io/guess-the-pokemon">live</a>
+                                <a href="https://github.com/midnightorca/guess-the-pokemon">git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== THIRD PROJECT ===== -->
+                <div class="project marvelousMatches">
+                    <h4>marvelous matches</h4>
+                    <div class="projectImgContainer">
+                        <img src="./assets/marvelousMatchesProject.png" alt="Screenshot of Marvelous Matches Project" class="projectImg" />
+                        <div class="overlay">
+                            <div class="overlayIcons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js-square" title="JavaScript"></i>
+                                <i class="fas fa-cog" title="API"></i>
+                                <i class="fab fa-git-alt" title="GIT"></i>
+                                <i class="fas fa-mobile-alt" title="Responsive Design"></i>
+                            </div>
+                            <div class="overlayLinks">
+                                <a href="https://markharrop-natalietso.github.io/mHnT-marvelousMatches">live</a>
+                                <a href="https://github.com/MarkHarrop-NatalieTso/mHnT-marvelousMatches">git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== FOURTH PROJECT ===== -->
+                <div class="project pianno">
+                    <h4>pian&sup2;o</h4>
+                    <div class="projectImgContainer">
+                        <img src="./assets/piannoProject.png" alt="Screenshot of Pianno Project" class="projectImg" />
+                        <div class="overlay">
+                            <div class="overlayIcons">
+                                <i class="fab fa-react" title="React"></i>
+                                <i class="fas fa-fire-alt" title="Firebase"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-git-alt" title="GIT"></i>
+                                <i class="fas fa-mobile-alt" title="Responsive Design"></i>
+                            </div>
+                            <div class="overlayLinks">
+                                <a href="https://nat-squared.github.io/natalieTsoNateYeowReactPiano">live</a>
+                                <a href="https://github.com/nat-squared/natalieTsoNateYeowReactPiano">git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <!-- ===== CONTACT ================== -->
+        <section class="contact wrapper" id="contact">
+            <h2>contact.</h2>
+
+            <h3>get in touch!</h3>
+            <div class="contactLinks">
+                <h4>send me an email</h4>
+                <i class="far fa-paper-plane" title="submit"></i>
+                <h4>check out my github</h4>
+                <i class="fab fa-github"></i>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ================================-->
+    <footer>
+        <p>Copyright&#169; 2021, Natalie Tso</p>
+    </footer>
+
 </body>
 </html>

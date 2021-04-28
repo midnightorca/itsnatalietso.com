@@ -1,0 +1,55 @@
+header {
+    background-image: url(../assets/header.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.headerWrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logo {
+
+    img {
+        margin-top: 40px;
+        width: 50px;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 45vh;
+    text-transform: lowercase;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-family: "Itim", cursive;
+    text-transform: lowercase;
+    color: #AAABB8;
+}
+
+nav {
+    position: absolute;
+    right: 0vw;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    a {
+        text-decoration: none;
+        margin: 0.25vh 0;
+        color: black;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: royalblue;
+        }
+    }
+}

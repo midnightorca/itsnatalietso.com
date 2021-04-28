@@ -1,0 +1,19 @@
+.contact {
+    height: 90vh;
+}
+
+.contactLinks {
+
+
+}
+
+.fa-paper-plane {
+    margin-left: 1vw;
+    margin-top: -0.5rem;
+    cursor: pointer;
+    transform: rotate(16deg);
+
+    &:hover {
+        color: royalblue;
+    }
+}
