@@ -1,0 +1,48 @@
+@media (max-width: 865px) {
+    .aboutContainer {
+        flex-direction: column;
+        margin: 8vh 0 12vh;
+    }
+
+    .aboutText {
+        width: 100%;
+        margin-bottom: 8vh;
+    }
+
+    .aboutImg {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .icons {
+        margin: 8vh 0;
+    }
+
+    .projectImgContainer {
+        width: 100%;
+    }
+
+    .projectImg {
+        width: 100%;
+    }
+
+    .contactLinks {
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+        margin-top: 8vh;
+    }
+
+    .contactSide,
+    .contactLinks {
+        width: 100%;
+    }
+
+    .contactLinks {
+        margin-top: 0;
+    }
+}

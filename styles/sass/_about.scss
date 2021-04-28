@@ -11,11 +11,13 @@ h2 {
 .aboutContainer {
     display: flex;
     margin: 20vh 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .aboutText,
 .aboutImg {
-    width: calc(45% - 2vw);
+    width: calc(50% - 2vw);
     margin: 0 1vw;
 }
 
@@ -42,7 +44,8 @@ h2 {
 }
 
 .selfImg {
-    width: 300px;
+    width: 100%;
+    margin: auto 0;
     border: 3px solid royalblue;
     border-radius: 10px;
 }

@@ -2,6 +2,7 @@ header {
     background-image: url(../assets/header.jpg);
     background-size: cover;
     height: 100vh;
+    position: relative;
 }
 
 .headerWrapper {
@@ -12,9 +13,16 @@ header {
 }
 
 .logo {
+    position: absolute;
+    top: 7vh;
+    left: 7vw;
+    z-index: 1;
+
+    &:hover {
+        cursor: pointer;
+    }
 
     img {
-        margin-top: 40px;
         width: 50px;
     }
 }
@@ -33,23 +41,9 @@ h3 {
     color: #AAABB8;
 }
 
-nav {
+.chevron {
     position: absolute;
-    right: 0vw;
-    top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    a {
-        text-decoration: none;
-        margin: 0.25vh 0;
-        color: black;
-        font-weight: 600;
-        font-size: 1.5rem;
-
-        &:hover {
-            color: royalblue;
-        }
-    }
+    width: 50px;
+    bottom: 0;
+    right: 8vw;
 }

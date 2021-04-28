@@ -3,13 +3,6 @@
     text-align: center;
     margin: 2rem 0 4rem;
 
-    h4 {
-        text-align: left;
-        margin-left: 10%;
-        position: absolute;
-        top: -1.5rem;
-        left: 1rem;
-    }
 }
 
 .project {
@@ -21,6 +14,13 @@
     position: relative;
     width: 500px;
     margin: 0 auto;
+
+    h4 {
+        text-align: left;
+        position: absolute;
+        top: -1.5rem;
+        left: -1rem;
+    }
 }
 
 .projectImg {

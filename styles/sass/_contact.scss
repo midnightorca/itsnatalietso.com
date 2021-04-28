@@ -1,19 +1,49 @@
-.contact {
-    height: 90vh;
+
+
+.contactContainer {
+    display: flex;
+    margin: 18vh 0;
+
+    img {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    i {
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+
+        &:hover {
+            color: royalblue;
+        }
+    }
+
+}
+
+.contactSide,
+.contactLinks {
+    width: 48%;
+    margin: 0 1%;
+}
+
+.contactSide {
+    text-align: center;
+
 }
 
 .contactLinks {
+    margin-top: 8vh;
+}
 
-
+.contactLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
 }
 
 .fa-paper-plane {
-    margin-left: 1vw;
-    margin-top: -0.5rem;
-    cursor: pointer;
     transform: rotate(16deg);
-
-    &:hover {
-        color: royalblue;
-    }
 }

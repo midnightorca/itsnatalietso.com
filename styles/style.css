@@ -240,6 +240,7 @@ html {
   background-color: black;
   color: white;
   font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -271,6 +272,7 @@ header {
   background-image: url(../assets/header.jpg);
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
 .headerWrapper {
@@ -280,8 +282,18 @@ header {
   margin: 0 auto;
 }
 
+.logo {
+  position: absolute;
+  top: 7vh;
+  left: 7vw;
+  z-index: 1;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
 .logo img {
-  margin-top: 40px;
   width: 50px;
 }
 
@@ -299,10 +311,28 @@ h3 {
   color: #AAABB8;
 }
 
-nav {
+.chevron {
   position: absolute;
-  right: 0vw;
-  top: 20vh;
+  width: 50px;
+  bottom: 0;
+  right: 8vw;
+}
+
+main {
+  position: relative;
+}
+
+.navigation {
+  position: absolute;
+  height: 100%;
+  right: 7vw;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,13 +348,26 @@ nav {
 nav a {
   text-decoration: none;
   margin: 0.25vh 0;
-  color: black;
+  color: white;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 nav a:hover {
   color: royalblue;
+}
+
+.toTop {
+  width: 50px;
+  position: fixed;
+  bottom: 5vh;
+  right: 7vw;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.toTop.show {
+  visibility: visible;
 }
 
 .wrapper {
@@ -342,11 +385,17 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin: 20vh 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutText,
 .aboutImg {
-  width: calc(45% - 2vw);
+  width: calc(50% - 2vw);
   margin: 0 1vw;
 }
 
@@ -373,7 +422,8 @@ h2 {
 }
 
 .selfImg {
-  width: 300px;
+  width: 100%;
+  margin: auto 0;
   border: 3px solid royalblue;
   border-radius: 10px;
 }
@@ -398,14 +448,6 @@ i:hover {
   margin: 2rem 0 4rem;
 }
 
-.projectsContainer h4 {
-  text-align: left;
-  margin-left: 10%;
-  position: absolute;
-  top: -1.5rem;
-  left: 1rem;
-}
-
 .project {
   margin: 10vh auto;
   position: relative;
@@ -415,6 +457,13 @@ i:hover {
   position: relative;
   width: 500px;
   margin: 0 auto;
+}
+
+.projectImgContainer h4 {
+  text-align: left;
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
 }
 
 .projectImg {
@@ -472,23 +521,109 @@ i:hover {
   opacity: 1;
 }
 
-.contact {
-  height: 90vh;
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 18vh 0;
+}
+
+.contactContainer img {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.contactContainer i {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.contactContainer i:hover {
+  color: royalblue;
+}
+
+.contactSide,
+.contactLinks {
+  width: 48%;
+  margin: 0 1%;
+}
+
+.contactSide {
+  text-align: center;
+}
+
+.contactLinks {
+  margin-top: 8vh;
+}
+
+.contactLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
 }
 
 .fa-paper-plane {
-  margin-left: 1vw;
-  margin-top: -0.5rem;
-  cursor: pointer;
   -webkit-transform: rotate(16deg);
           transform: rotate(16deg);
-}
-
-.fa-paper-plane:hover {
-  color: royalblue;
 }
 
 footer {
   height: 5vh;
   text-align: center;
+}
+
+@media (max-width: 865px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 8vh 0 12vh;
+  }
+  .aboutText {
+    width: 100%;
+    margin-bottom: 8vh;
+  }
+  .aboutImg {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .icons {
+    margin: 8vh 0;
+  }
+  .projectImgContainer {
+    width: 100%;
+  }
+  .projectImg {
+    width: 100%;
+  }
+  .contactLinks {
+    margin-top: 3vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 8vh;
+  }
+  .contactSide,
+  .contactLinks {
+    width: 100%;
+  }
+  .contactLinks {
+    margin-top: 0;
+  }
 }
