@@ -1,3 +1,24 @@
+// for scrolling nav bar to change a when active
+window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute("id");
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav a[href="#${id}"]`).classList.add("current");
+            } else {
+                document.querySelector(`nav a[href="#${id}"]`).classList.remove("current")
+            }
+        })
+    })
+
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    })
+})
+
+
+
 const burgerNav = document.getElementById("burgerNav");
 burgerNav.addEventListener("click", function() {
     const changeIcon = () => {
@@ -40,21 +61,3 @@ toTopButton.onclick = function(e) {
     toTopFunc();
 }
 
-// for scrolling nav bar to change a when active
-window.addEventListener('DOMContentLoaded', () => {
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute("id");
-            if (entry.intersectionRatio > 0) {
-                document.querySelector(`nav a[href="#${id}"]`).classList.add("current");
-            } else {
-                document.querySelector(`nav a[href="#${id}"]`).classList.remove("current")
-            }
-        })
-    })
-
-    document.querySelectorAll('section[id]').forEach((section) => {
-        observer.observe(section);
-    })
-})
