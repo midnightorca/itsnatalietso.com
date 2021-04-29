@@ -5,9 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             const id = entry.target.getAttribute("id");
             if (entry.intersectionRatio > 0) {
-                document.querySelector(`nav a[href="#${id}"]`).classList.add("current");
+                document.querySelector(`a[href="#${id}"].navLink`).classList.add("current");
             } else {
-                document.querySelector(`nav a[href="#${id}"]`).classList.remove("current")
+                document.querySelector(`a[href="#${id}"].navLink`).classList.remove("current")
             }
         })
     })
