@@ -32,6 +32,35 @@
 }
 
 @media (max-width: 768px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .navigation {
+        right: 3vw;
+    }
+
+    .burgerNav {
+        display: block;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .overlay {
+        position: static;
+        opacity: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .overlay i {
+        margin-bottom: 0;
+        padding: 0.5rem;
+    }
+
     .contactContainer {
         flex-direction: column;
         margin-top: 8vh;

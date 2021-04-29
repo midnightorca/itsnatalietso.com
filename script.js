@@ -1,4 +1,24 @@
+const burgerNav = document.getElementById("burgerNav");
+burgerNav.addEventListener("click", function() {
+    const changeIcon = () => {
+        document.querySelectorAll(".bar").forEach(bar => {
+            bar.classList.toggle("change")
+        })
+    }
+    changeIcon();
+    toggleNav();
+})
 
+
+const toggleNav = () => {
+    const mobileNav = document.getElementById("mobileNav");
+    const background = document.getElementById("mobileNavBackground")
+
+    mobileNav.classList.toggle("show");
+    background.classList.toggle("show");
+}
+
+// functions for scrolling back to top
 const toTopButton = document.getElementById("toTop");
 
 window.onscroll = function() {scrollFunc()}
@@ -20,7 +40,7 @@ toTopButton.onclick = function(e) {
     toTopFunc();
 }
 
-
+// for scrolling nav bar to change a when active
 window.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver(entries => {

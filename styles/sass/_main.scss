@@ -1,5 +1,6 @@
 main {
     position: relative;
+    margin-top: 2vh;
 }
 
 .navigation {
@@ -8,13 +9,14 @@ main {
     right: 7vw;
 }
 
-nav {
+.mainNav {
     position: sticky;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 1;
 
     a {
         text-decoration: none;
@@ -39,12 +41,87 @@ nav {
     }
 }
 
+.burgerNav {
+    display: none;
+    position: fixed;
+    top: 5vh;
+    right: 7vw;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.barOne,
+.barTwo,
+.barThree {
+    width: 36px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+.barOne.change {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.barTwo.change {
+    opacity: 0;
+}
+
+.barThree.change {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.mobileNav {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 10vh;
+    right: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+    transition: 0.5s;
+    
+    a {
+        color: #AAABB8;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+
+.mobileNav.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mobileNavBackground {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background-image: radial-gradient(250px circle at top right, royalblue 99%, transparent 99.1%);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.mobileNavBackground.show {
+    visibility: visible;
+    opacity: 1;
+}
+
 .toTop {
     width: 50px;
     position: fixed;
     bottom: 5vh;
     right: 7vw;
     cursor: pointer;
+    z-index: 1;
     visibility: hidden;
     animation: bounce 1s infinite;
 
