@@ -1,6 +1,4 @@
 
-
-
 const toTopButton = document.getElementById("toTop");
 
 window.onscroll = function() {scrollFunc()}
@@ -21,3 +19,22 @@ const toTopFunc = () => {
 toTopButton.onclick = function(e) {
     toTopFunc();
 }
+
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute("id");
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav a[href="#${id}"]`).classList.add("current");
+            } else {
+                document.querySelector(`nav a[href="#${id}"]`).classList.remove("current")
+            }
+        })
+    })
+
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    })
+})

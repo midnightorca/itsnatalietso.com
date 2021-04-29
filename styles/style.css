@@ -311,11 +311,18 @@ h3 {
   color: #AAABB8;
 }
 
+.downChevron {
+  z-index: 1;
+  cursor: pointer;
+}
+
 .chevron {
   position: absolute;
   width: 50px;
   bottom: 0;
   right: 8vw;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 
 main {
@@ -350,11 +357,22 @@ nav a {
   margin: 0.25vh 0;
   color: white;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
 }
 
 nav a:hover {
   color: royalblue;
+}
+
+nav a:active {
+  color: royalblue;
+}
+
+nav a.current {
+  color: royalblue;
+  font-size: 1.2rem;
 }
 
 .toTop {
@@ -364,10 +382,42 @@ nav a:hover {
   right: 7vw;
   cursor: pointer;
   visibility: hidden;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 
 .toTop.show {
   visibility: visible;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .wrapper {
@@ -429,7 +479,7 @@ h2 {
 }
 
 .icons {
-  margin: 16vh 0;
+  margin: 19vh 0;
   text-align: center;
 }
 

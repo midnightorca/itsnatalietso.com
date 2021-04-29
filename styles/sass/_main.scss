@@ -21,10 +21,20 @@ nav {
         margin: 0.25vh 0;
         color: white;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 0.8rem;
+        transition: font-size 0.5s;
 
         &:hover {
             color: royalblue;
+        }
+
+        &:active {
+            color: royalblue;
+        }
+
+        &.current {
+            color: royalblue;
+            font-size: 1.2rem;
         }
     }
 }
@@ -36,8 +46,21 @@ nav {
     right: 7vw;
     cursor: pointer;
     visibility: hidden;
+    animation: bounce 1s infinite;
 
     &.show {
         visibility: visible;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px)
     }
 }

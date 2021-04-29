@@ -41,9 +41,15 @@ h3 {
     color: #AAABB8;
 }
 
+.downChevron {
+    z-index: 1;
+    cursor: pointer;
+}
+
 .chevron {
     position: absolute;
     width: 50px;
     bottom: 0;
     right: 8vw;
+    animation: bounce 1s infinite;
 }
