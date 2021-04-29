@@ -1,16 +1,21 @@
 @media (max-width: 1366px) {
     .overlay {
-        position: static;
+        position: relative;
         opacity: 1;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        background: none;
     }
     
     .overlay i {
-        margin-bottom: 0;
-        padding: 0.5rem;
+        margin-bottom: 0.8rem;
+        padding: 0.5rem 1rem 0 0;
         font-size: 1.5rem;
+    }
+
+    .overlay a {
+        margin: 0 20px 0.8rem 0;
     }
 
 }
@@ -53,18 +58,9 @@
         width: 80%;
     }
 
-    .navigation {
-        right: 3vw;
-    }
-
-    .burgerNav {
-        display: block;
-    }
-
     .mainNav {
         display: none;
     }
-
 
     .contactContainer {
         flex-direction: column;
@@ -78,5 +74,15 @@
 
     .contactLinks {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    i {
+        margin: 2rem;
+    }
+
+    .fa-terminal {
+        font-size: 2.6rem;
     }
 }
