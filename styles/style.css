@@ -727,7 +727,7 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1112px) {
+@media (max-width: 1366px) {
   .overlay {
     position: static;
     opacity: 1;
