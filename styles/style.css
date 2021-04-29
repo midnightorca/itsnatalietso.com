@@ -727,6 +727,27 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 1112) {
+  .overlay {
+    position: static;
+    opacity: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .overlay i {
+    margin-bottom: 0;
+    padding: 0.5rem;
+  }
+}
+
 @media (max-width: 865px) {
   .aboutContainer {
     -webkit-box-orient: vertical;
@@ -769,24 +790,6 @@ footer {
   }
   .mainNav {
     display: none;
-  }
-  .overlay {
-    position: static;
-    opacity: 1;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .overlay i {
-    margin-bottom: 0;
-    padding: 0.5rem;
   }
   .contactContainer {
     -webkit-box-orient: vertical;

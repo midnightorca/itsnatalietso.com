@@ -1,3 +1,19 @@
+@media (max-width: 1112) {
+    .overlay {
+        position: static;
+        opacity: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .overlay i {
+        margin-bottom: 0;
+        padding: 0.5rem;
+    }
+
+}
+
 @media (max-width: 865px) {
     .aboutContainer {
         flex-direction: column;
@@ -48,18 +64,6 @@
         display: none;
     }
 
-    .overlay {
-        position: static;
-        opacity: 1;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .overlay i {
-        margin-bottom: 0;
-        padding: 0.5rem;
-    }
 
     .contactContainer {
         flex-direction: column;
