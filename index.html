@@ -164,10 +164,10 @@
             <div class="contactContainer">
 
                 <div class="contactSide">
-                    <h3>get in touch!</h3>
+                    <!-- <h3>get in touch!</h3> -->
                     <img src="assets/blackDotwork.png" alt="Digital pointillism drawing of three mountains and a moon" />
                 </div>
-                <div class="contactLinks">
+                <!-- <div class="contactLinks">
                     <div class="contactLink">
                         <h4>send me an email</h4>
                         <a href="mailto:natalietso16@gmail.com"><i class="far fa-paper-plane" title="email"></i></a>
@@ -188,7 +188,25 @@
                         <h4>glance at my pointillism art</h4>
                         <a href="https://instagram.com/midnightorca" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a>
                     </div>
+                </div> -->
+                <div class="contactFormContainer">
+                    <form name="contact" action="#" method="POST" data-netlify="true" class="contactForm">
+                        <h3>get in touch!</h3>
 
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="your name" required>
+
+                        <label for="email"></label>
+                        <input type="text" name="email" id="email" placeholder="your email" required>
+
+                        <label for="subject"></label>
+                        <input type="text" name="subject" id="subject" placeholder="your subject" required>
+
+                        <label for="message"></label>
+                        <textarea type="text" name="message" id="message" placeholder="your message" required></textarea>
+
+                        <button type="submit">send it! <i class="far fa-paper-plane" id="paperPlane"></i></button>
+                    </form>
                 </div>
             </div>
 

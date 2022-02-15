@@ -21,7 +21,8 @@
 }
 
 .contactSide,
-.contactLinks {
+// .contactLinks,
+.contactFormContainer {
     width: 48%;
     margin: 0 1%;
 }
@@ -31,11 +32,55 @@
 
 }
 
-.contactLink {
+// .contactLink {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin: 1rem;
+// }
+.contactForm {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+    h3 {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    input,
+    textarea {
+        font-family: "Itim", sans-serif;
+        color: rgb(16, 16, 16);
+        width: 100%;
+        background-color: rgb(222, 222, 222);
+        border: 3px solid royalblue;
+        border-radius: 10px;
+        margin: 0.3em 0;
+        padding-left: 0.3em;
+        padding-bottom: 0.2em;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+        color: rgb(16, 16, 16);
+    }
+
+    button {
+        margin: 0.3em 0;
+        font-family: "Itim", sans-serif;
+        border-radius: 10px;
+        border: 3px solid royalblue;
+        padding: 0.2em 1em 0.4em;
+        color: rgb(16, 16, 16);
+        
+
+        #paperPlane {
+            color: rgb(16, 16, 16);
+            font-size: 1.3rem;
+        }
+    }
 }
 
 .fa-paper-plane {
